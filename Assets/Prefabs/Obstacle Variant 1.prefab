@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle Barrier
       objectReference: {fileID: 0}
+    - target: {fileID: 145980, guid: 84a102c1bf03d0a43bd4b342185c2811, type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
+      objectReference: {fileID: 0}
     - target: {fileID: 445980, guid: 84a102c1bf03d0a43bd4b342185c2811, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.47842646
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 445980, guid: 84a102c1bf03d0a43bd4b342185c2811, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445980, guid: 84a102c1bf03d0a43bd4b342185c2811, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.2820034
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 445980, guid: 84a102c1bf03d0a43bd4b342185c2811, type: 3}
       propertyPath: m_LocalRotation.w
@@ -101,7 +105,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4267312165947469411, guid: 9c2f24b5a9452f245b190a3a57eb4213, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.9283304
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4267312165947469411, guid: 9c2f24b5a9452f245b190a3a57eb4213, type: 3}
       propertyPath: m_LocalPosition.y
@@ -109,7 +113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4267312165947469411, guid: 9c2f24b5a9452f245b190a3a57eb4213, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.36650467
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4267312165947469411, guid: 9c2f24b5a9452f245b190a3a57eb4213, type: 3}
       propertyPath: m_LocalRotation.w

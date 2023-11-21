@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4267312165947469411, guid: 9c2f24b5a9452f245b190a3a57eb4213, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.793104
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4267312165947469411, guid: 9c2f24b5a9452f245b190a3a57eb4213, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4267312165947469411, guid: 9c2f24b5a9452f245b190a3a57eb4213, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.001914978
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4267312165947469411, guid: 9c2f24b5a9452f245b190a3a57eb4213, type: 3}
       propertyPath: m_LocalRotation.w
@@ -78,9 +78,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle Orange
       objectReference: {fileID: 0}
+    - target: {fileID: 181666, guid: ee7d0c4ddd804dd4e95f705d43c9135e, type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
+      objectReference: {fileID: 0}
     - target: {fileID: 481666, guid: ee7d0c4ddd804dd4e95f705d43c9135e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.285055
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481666, guid: ee7d0c4ddd804dd4e95f705d43c9135e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -88,7 +92,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481666, guid: ee7d0c4ddd804dd4e95f705d43c9135e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.062282562
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481666, guid: ee7d0c4ddd804dd4e95f705d43c9135e, type: 3}
       propertyPath: m_LocalRotation.w

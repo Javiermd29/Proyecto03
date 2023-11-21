@@ -9,13 +9,12 @@ public class SpawnManager : MonoBehaviour
     private float timeBetweenObstacles = 2f;
     private float startDelay = 1.5f;
 
+    private PlayerController playerControllerScript;
+
     [SerializeField] private GameObject[] obstaclesArray;
     private int obstaclesIndex;
 
-    // [SerializeField] private GameObject obstacle;
-
     private Vector3 spawnPos;
-
 
     private void Awake()
     {
@@ -23,18 +22,34 @@ public class SpawnManager : MonoBehaviour
     }
     private void Start()
     {
-        InvokeRepeating("InstantiateRandomObstacles", startDelay, timeBetweenObstacles);
+       playerControllerScript = FindObjectOfType<PlayerController>();
+
+       InvokeRepeating("InstantiateRandomObstacles", startDelay, timeBetweenObstacles);
+
+    }
+
+    private void Update()
+    {
+
+        if (playerControllerScript.isGameOver)
+        {
+            CancelInvoke("InstantiateRandomObstacles");
+        }
+
     }
 
     private void InstantiateRandomObstacles()
     {
         obstaclesIndex = Random.Range(0, obstaclesArray.Length);
+
         Instantiate(obstaclesArray[obstaclesIndex], spawnPos, Quaternion.identity);
+
+        /*if (!playerControllerScript.isGameOver)
+        {
+            Instantiate(obstaclesArray[obstaclesIndex], spawnPos, Quaternion.identity);
+        }*/
+
+
     }
-    
-    /*private void InstantiateObstacle()
-    {
-        Instantiate(obstacle, spawnPos, Quaternion.identity);
-    }*/
 
 }

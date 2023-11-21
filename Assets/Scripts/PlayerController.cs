@@ -11,19 +11,22 @@ public class PlayerController : MonoBehaviour
 
     private bool isOnTheGround;
 
+    public bool isGameOver;
+
     private void Awake()
     {
 
         playerRigidbody = GetComponent<Rigidbody>();
 
         isOnTheGround = true;
+        isGameOver = false;
 
     }
 
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && isOnTheGround)
+        if (Input.GetKeyDown(KeyCode.Space) && isOnTheGround && !isGameOver)
         {
 
             playerRigidbody.AddForce(Vector3.up * force, ForceMode.Impulse);
@@ -33,12 +36,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision coliision)
+    private void OnCollisionEnter(Collision collision)
     {
 
-        if (coliision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isOnTheGround = true;
+        }
+
+        if (collision.gameObject.CompareTag("Obstacles"))
+        {
+
+            Debug.Log("GAME OVER!");
+            isGameOver = true;
         }
 
     }
